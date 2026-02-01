@@ -149,6 +149,7 @@ elif menu == "Results Dashboard":
         progress = df.groupby("Topic")["Percentage"].mean()
         st.bar_chart(progress)
 
-        st.subheader("🏆 Overall Average Performance")
+        st.subheader("Overall Average Performance")
         st.metric("Overall Average (%)", round(df["Percentage"].mean(), 1))
+
 
